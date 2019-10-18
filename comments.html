@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!-- Compiled Fontawesome Icons-->
+    <script
+      src="https://kit.fontawesome.com/a2442a0283.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CK EDITOR 4-->
+    <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Materialize Theme</title>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">Madamin</a>
+          <a
+            href="#"
+            data-activates="side-nav"
+            class="button-collapse show-on-large right"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li ><a href="index.html">Dashboard</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li ><a href="categories.html">Categories</a></li>
+            <li class="active"><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+          <!-- SIDENAV -->
+          <ul class="side-nav" id="side-nav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/ocean.jpg" alt="" />
+                </div>
+                <a href="#"
+                  ><img src="img/person1.jpg" alt="" class="circle"
+                /></a>
+                <a href="#"
+                  ><span class="email white-text">John Doe</span></a
+                >
+                <a href="#"
+                  ><span class="email white-text">jdoe@gmail.com</span></a
+                >
+              </div>
+              <li><a href="index.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+              <li><a href="posts.html"><i class="material-icons">create</i> Posts</a></li>
+              <li><a href="categories.html"><i class="material-icons">dehaze</i> Categories</a></li>
+              <li><a href="comments.html"><i class="material-icons">comment</i> Comments</a></li>
+              <li><a href="users.html"><i class="material-icons">group</i> Users</a></li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li><a class="subheader">Account Controls</a></li>
+              <li><a href="logout.html" class="waves-effect">Logout</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION:  COMMENT-->
+    <section class="section section-post grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Comments</span>
+                            <table class="striped">
+                                <tbody>
+                                    <tr>
+                                        <td width="70"><img src="img/person1.jpg" alt="" 
+                                            style="width: 40px; margin-left:10px;" class="responsive-image circle"> </td>
+                                        <td>Lorem, ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Nemo, reprehenderit.</td>
+                                        <td><a href="#!" class="green-text"><i class="material-icons">done</i></a>
+                                            <a href="#!" class="red-text"><i class="material-icons">close</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="70"><img src="img/person2.jpg" alt="" 
+                                            style="width: 40px; margin-left:10px;" class="responsive-image circle"> </td>
+                                        <td>Lorem, ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Nemo, reprehenderit.</td>
+                                        <td><a href="#!" class="green-text"><i class="material-icons">done</i></a>
+                                            <a href="#!" class="red-text"><i class="material-icons">close</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="70"><img src="img/person3.jpg" alt="" 
+                                            style="width: 40px; margin-left:10px;" class="responsive-image circle"> </td>
+                                        <td>Lorem, ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Nemo, reprehenderit.</td>
+                                        <td><a href="#!" class="green-text"><i class="material-icons">done</i></a>
+                                            <a href="#!" class="red-text"><i class="material-icons">close</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="70"><img src="img/person4.jpg" alt="" 
+                                            style="width: 40px; margin-left:10px;" class="responsive-image circle"> </td>
+                                        <td>Lorem, ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Nemo, reprehenderit.</td>
+                                        <td><a href="#!" class="green-text"><i class="material-icons">done</i></a>
+                                            <a href="#!" class="red-text"><i class="material-icons">close</i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-action">
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a href="#!" class="blue-text">
+                                        <i class="material-icons">chevron_left</i>
+                                    </a>
+                                </li>
+                                <li class="active blue lighten-2">
+                                    <a href="#!" class="white-text">1</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!" class="blue-text">2</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!" class="blue-text">3</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!" class="blue-text">4</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!" class="blue-text">5</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!" class="blue-text">6</a>
+                                </li>
+                                <li class="waves-effect">
+                                    <a href="#!" class="blue-text"
+                                    ><i class="material-icons">chevron_right</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="section blue darken-3 white-text center">
+      <p>Madmin Panel Copyright &copy; 2019</p>
+    </footer>
+
+    <!-- Fixed Action Button-->
+    <div class="fixed-action-btn">
+      <a href="#category-modal" class="modal-trigger btn-floating btn-large red">
+        <i class="material-icons">add</i>
+      </a>
+
+      </ul>
+    </div>
+
+    <!-- Add Category Modal-->
+    <div id="category-modal" class="modal">
+      <div class="modal-content">
+        <h4>Add Category</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="title">
+            <label for="title">Title</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRELOADER JS-->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right"></div>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script>
+
+      // Hide all sections first
+      $('section').hide();
+
+      // Set timer for all the documents function when first loaded
+      setTimeout( _ => {
+
+      $(document).ready(function() {
+              // Modal
+              $('.modal').modal();
+
+              // INIT SELECT
+              $('select').material_select();
+              // Show Section
+              $('section').fadeIn();
+
+              // HIDE PRELOADER
+              $('.loader').fadeOut();
+
+              // Card Panel Counter
+              $('.count').each(function () {
+                $(this).prop('Counter',0).animate({
+                  Counter: $(this).text()
+                },{duration: 10000,
+                easing: 'swing',
+                step: function(now) {
+                  $(this).text(Math.ceil(now));
+                }}
+                )
+              });
+
+              // Comments - Approve & Deny
+              $('.approve').click(function(e){
+
+                Materialize.toast('Comment Approved',3000,'rounded')
+                e.preventDefault();
+              });
+              $('.deny').click(function(e){
+
+                Materialize.toast('Comment Denied',3000,'rounded')
+                e.preventDefault();
+              });
+
+              // Quick Todos
+              $('#todo-form').submit( function (e) {
+                // Test if id todo has an input if submitted
+                // console.log($('#todo').val());
+                e.preventDefault();
+                const output = `
+                <li class="collection-item">
+                    <div>
+                        ${$('#todo').val()}
+                        <a href="#!" class="secondary-content delete">
+                          <i class="material-icons">close</i>
+                          </a>
+                      </div>
+                  </li>
+                `;
+
+                  // Appends the output const inside the todos ul
+                $('.todos').append(output);
+                $('#todo').val('');
+                  // Creates a toast effect when a todo has been added
+                Materialize.toast('Todo Added', 3000,'rounded');
+
+               
+              });
+
+              // Delete Todos
+              $('.todos').on('click','.delete',function(e) {
+                e.preventDefault();
+                
+                // Removes the click button along its parent elements
+                $(this).parent().parent().remove();
+
+                // Test if the click button logs what the parent of this is
+                // console.log($(this).parent());
+              });
+              // Init Side nav
+              $(".button-collapse").sideNav();
+            });
+
+            // So that textarea has an editor for text - needed CDN 
+            CKEDITOR.replace('body');
+      }, 1500);
+      
+    </script>
+  </body>
+</html>
